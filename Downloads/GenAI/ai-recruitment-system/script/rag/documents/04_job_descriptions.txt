@@ -1,0 +1,167 @@
+JOB DESCRIPTION TEMPLATES
+==========================
+Version 2.4 | Talent Acquisition Team | Active Roles
+
+---
+
+ROLE: AI/ML ENGINEER
+====================
+
+Title: AI/ML Engineer (Mid-Level)
+Department: AI & Machine Learning
+Reports To: Head of AI Engineering
+Location: Remote-first (US, Canada, or international with overlap)
+
+ABOUT THE ROLE:
+We are looking for a passionate AI/ML Engineer to join our team building intelligent systems
+that power real-world applications. You will work across the full ML lifecycle: from data
+engineering and model training to evaluation, deployment, and monitoring. A significant focus
+of our current work is on large language models (LLMs), retrieval-augmented generation (RAG),
+and fine-tuning for domain-specific tasks.
+
+You'll collaborate with product engineers to ship ML features, work with data scientists on
+experiment design, and help maintain our growing ML infrastructure. We care deeply about
+rigorous experimentation, responsible AI practices, and building systems that work reliably
+in production.
+
+WHAT YOU'LL DO:
+- Design, train, evaluate, and deploy machine learning models (classical ML and deep learning)
+- Build and maintain RAG pipelines for knowledge-grounded LLM applications
+- Fine-tune open-source LLMs (Llama, Mistral, Falcon) using LoRA/QLoRA for domain adaptation
+- Engineer high-quality training data pipelines (ingestion, cleaning, feature engineering)
+- Implement experiment tracking and model evaluation frameworks
+- Collaborate with MLOps to deploy models via FastAPI/TorchServe in containerized environments
+- Monitor production models for performance degradation and data drift
+- Write clean, tested, production-quality code
+
+REQUIRED QUALIFICATIONS:
+- 2+ years of hands-on ML/AI experience (research with publications counts)
+- Proficiency in Python; strong comfort with PyTorch or TensorFlow
+- Experience building and training neural networks from scratch, not just using pre-built models
+- Understanding of ML fundamentals: optimization, regularization, evaluation metrics, cross-validation
+- Hands-on experience with LLMs: fine-tuning, prompt engineering, or RAG pipeline development
+- Familiarity with embedding models and vector databases (Pinecone, ChromaDB, Weaviate, Qdrant)
+- Experience with data engineering tools (Pandas, SQL, or Spark for larger datasets)
+- Proficiency with Git and collaborative development practices
+
+PREFERRED QUALIFICATIONS:
+- Experience with LoRA/QLoRA parameter-efficient fine-tuning
+- MLOps experience: model serving, experiment tracking (MLflow, W&B), CI/CD for ML
+- Published research or open-source contributions in ML
+- Experience with distributed training or GPU cluster management
+- Knowledge of LLM evaluation frameworks (RAGAS, HELM, TruLens)
+
+COMPENSATION: $130,000 – $175,000 base + equity + benefits
+
+---
+
+ROLE: BACKEND ENGINEER
+======================
+
+Title: Backend Engineer (Mid-Level)
+Department: Platform Engineering
+Reports To: Engineering Manager, Platform
+Location: Remote-first
+
+ABOUT THE ROLE:
+Our Platform Engineering team builds the infrastructure and services that power our product.
+We are looking for a Backend Engineer who thrives on solving complex distributed systems problems,
+cares deeply about reliability and performance, and can collaborate effectively with product and
+ML teams to ship features quickly without sacrificing quality.
+
+You'll own services from design through deployment, work on our evolving microservices architecture,
+and contribute to our cloud infrastructure on AWS.
+
+WHAT YOU'LL DO:
+- Design, build, and maintain scalable backend services and APIs (REST and GraphQL)
+- Own the full lifecycle of features: design → implementation → testing → deployment → monitoring
+- Work on database design, query optimization, and data modeling for PostgreSQL and Redis
+- Participate in system design discussions and architecture decisions
+- Contribute to CI/CD pipeline improvements and infrastructure-as-code
+- Collaborate with ML engineers to build serving infrastructure for AI models
+- On-call participation for the services you own (rotational, reasonable on-call load)
+- Mentor junior engineers through code review and pair programming
+
+REQUIRED QUALIFICATIONS:
+- 3+ years of professional backend engineering experience
+- Expert proficiency in Python (Django or FastAPI) or Node.js; strong SQL fundamentals
+- Production experience with PostgreSQL: schema design, indexing, query optimization
+- Experience with REST API design and best practices; some GraphQL experience
+- Hands-on AWS experience: EC2/ECS, RDS, S3, Lambda; comfortable with the AWS console and CLI
+- Docker in production; understanding of containerization best practices
+- Experience with CI/CD (GitHub Actions, Jenkins, or equivalent)
+- Strong understanding of software design patterns and clean code principles
+- Security awareness: authentication (JWT/OAuth), authorization, common vulnerability prevention
+
+PREFERRED QUALIFICATIONS:
+- Kubernetes in production (EKS preferred)
+- Kafka or RabbitMQ for event-driven architecture
+- Redis for caching and message queues
+- Infrastructure as code (Terraform or CloudFormation)
+- Experience building multi-tenant SaaS systems
+- GraphQL (Strawberry or Ariadne for Python)
+
+COMPENSATION: $125,000 – $165,000 base + equity + benefits
+
+---
+
+ROLE: FRONTEND ENGINEER
+=======================
+
+Title: Frontend Engineer (Mid-Level)
+Department: Product Engineering
+Reports To: Engineering Manager, Product
+Location: Remote-first
+
+ABOUT THE ROLE:
+Our Product Engineering team builds the user-facing surfaces that our customers interact with
+every day. We are looking for a Frontend Engineer who combines technical excellence with strong
+UX instincts — someone who can look at a complex user flow and make it feel simple, and who
+cares as much about accessibility and performance as they do about feature delivery.
+
+Our frontend stack is React + TypeScript, and we have high standards for code quality, testing,
+and component architecture.
+
+WHAT YOU'LL DO:
+- Build and maintain responsive, accessible React/TypeScript components and features
+- Collaborate closely with designers (Figma) to implement pixel-perfect UIs
+- Own your features end-to-end: from component architecture through testing and deployment
+- Improve and maintain the component library used across the product
+- Optimize frontend performance (bundle size, Core Web Vitals, rendering performance)
+- Write comprehensive tests (unit, integration, and E2E with Playwright)
+- Contribute to frontend architecture decisions (state management, routing, code splitting)
+- Conduct thorough code reviews with a focus on maintainability and accessibility
+
+REQUIRED QUALIFICATIONS:
+- 2+ years of professional frontend engineering experience
+- Expert in React (function components, hooks, including useMemo/useCallback/useRef)
+- Strong TypeScript proficiency — TypeScript is not optional; all code is TS
+- Advanced CSS3 skills: responsive design, CSS Modules or Tailwind, animation
+- Proficiency with a state management solution (Redux Toolkit, Zustand, or React Query)
+- Experience with testing: Jest + React Testing Library at minimum; E2E experience preferred
+- Familiarity with build tools (Vite or Webpack)
+- Accessibility: working knowledge of WCAG 2.1 guidelines and ARIA attributes
+- Git proficiency and comfortable with code review processes
+
+PREFERRED QUALIFICATIONS:
+- Experience with Next.js or Remix (SSR/SSG)
+- E2E testing with Playwright or Cypress
+- Component library authoring experience (Storybook)
+- Performance optimization experience (Lighthouse, profiling, bundle analysis)
+- Design systems knowledge and experience contributing to shared UI libraries
+
+COMPENSATION: $115,000 – $155,000 base + equity + benefits
+
+---
+
+HIRING PROCESS (ALL ROLES):
+1. Application Screening (AI-assisted review of resume vs. rubric)
+2. Recruiter Call (30 min) — culture and expectations alignment
+3. Technical Assessment (take-home or live coding, role-specific)
+4. Technical Interview (60 min) — in-depth technical discussion with the hiring team
+5. System Design / Architecture Discussion (45 min) — senior roles and above
+6. Final Conversation with Engineering Manager (30 min)
+7. Offer
+
+We aim to complete the process in 2–3 weeks. We provide written feedback to all candidates
+who reach the technical interview stage, regardless of outcome.

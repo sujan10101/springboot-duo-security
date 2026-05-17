@@ -1,0 +1,164 @@
+REJECTION HISTORY — DECISION SUMMARIES
+=======================================
+Source: Interview Debrief Records | Period: 2022–2025 | Anonymized
+
+PURPOSE: These summaries capture the specific reasons candidates were rejected at similar score levels,
+so the AI Review Agent can generate accurate, honest feedback rather than generic rejections.
+
+---
+
+CASE RJ-001 | Role: AI/ML Engineer | Score: 58/100 | Quarter: Q3 2023
+----------------------------------------------------------------------
+Candidate Profile: BS CS, 2 years experience, primarily data analytics role
+Claimed Skills: Python, Machine Learning, TensorFlow, SQL
+Actual Assessment:
+- Strong SQL and data analysis skills (Category 5 rated 12/15)
+- Claimed TensorFlow experience but could only describe tutorial-level work on MNIST dataset
+- Could not explain the difference between a validation set and a test set
+- No understanding of backpropagation or when to use different optimizers
+
+Primary Rejection Reason: Critical gap in ML fundamentals. The candidate could use ML tools
+but could not reason about them. When asked why they would choose Adam over SGD, the answer
+was "Adam is newer and usually better" with no understanding of momentum, adaptive learning
+rates, or convergence properties. This level of understanding is insufficient for an ML engineer
+role where debugging failed training runs is a core daily responsibility.
+
+Secondary Reason: TensorFlow experience was misrepresented. Tutorial completion ≠ framework proficiency.
+
+Feedback Provided to Candidate: "Your data analysis skills are genuinely strong, and SQL expertise
+is valuable. The gap we identified is in deep learning fundamentals — the theory behind how and why
+models learn. We recommend studying Andrew Ng's Deep Learning Specialization on Coursera, focusing
+on the mathematical intuition behind optimization. After 6 months of focused study combined with
+hands-on projects training models from scratch (not using AutoML), you would be a much stronger
+candidate for this role."
+
+---
+
+CASE RJ-002 | Role: Backend Engineer | Score: 62/100 | Quarter: Q1 2024
+------------------------------------------------------------------------
+Candidate Profile: BS CS, 3 years experience, full-stack web development
+Claimed Skills: Python, Django, PostgreSQL, AWS, Docker
+Actual Assessment:
+- Strong Django and Python skills (Category 1: 20/25)
+- PostgreSQL knowledge decent for CRUD but no indexing strategy knowledge (Category 2: 14/25)
+- System design revealed fundamental gaps: could not propose a scalable architecture for
+  a multi-tenant SaaS; suggested a single database for all tenants without considering isolation
+- AWS: EC2 and S3 only; no RDS, Lambda, or infrastructure-as-code experience
+- No Kubernetes, CI/CD was GitHub Actions for simple deploys only
+
+Primary Rejection Reason: System design gaps were the deciding factor. The role requires engineers
+who can reason about distributed systems trade-offs. The candidate's mental model was limited to
+single-server, single-database architectures. When probed on scaling, the primary suggestion was
+"vertical scaling (bigger server)" with no mention of horizontal scaling, database read replicas,
+or caching strategies.
+
+Secondary Reason: The AWS experience was narrower than stated. "AWS experience" on a resume
+should not be interpreted as EC2 + S3 only; the team uses ECS, RDS, CloudFormation daily.
+
+Feedback Provided to Candidate: "Your application development skills are solid. The gaps are in
+distributed systems design and cloud infrastructure depth. We recommend: (1) Study 'Designing
+Data-Intensive Applications' by Martin Kleppmann — this book directly addresses the gaps we found.
+(2) Get hands-on with AWS ECS and RDS by deploying a real project. (3) Study the multi-tenancy
+patterns used by SaaS companies. With 6–12 months of deliberate practice in these areas, you
+would be competitive for a mid-level backend role here."
+
+---
+
+CASE RJ-003 | Role: Frontend Engineer | Score: 55/100 | Quarter: Q2 2023
+-------------------------------------------------------------------------
+Candidate Profile: Self-taught, 1.5 years experience, freelance projects
+Claimed Skills: React, JavaScript, CSS, Responsive Design
+Actual Assessment:
+- React knowledge limited to class components and basic hooks (useState, useEffect)
+- No TypeScript experience; refused to learn TypeScript ("it slows me down")
+- CSS skills good for layouts but no knowledge of CSS architecture (BEM, CSS Modules) or preprocessors
+- No testing experience whatsoever
+- Accessibility: had never heard of WCAG; could not describe what aria-label does
+- State management: only useState; no experience with Context API, Redux, or equivalents
+
+Primary Rejection Reason: The depth of React knowledge was insufficient for a production frontend
+role. Missing hooks (useMemo, useCallback, useRef) suggest a surface-level understanding. More
+critically, the explicit resistance to TypeScript was a concern — the team's entire codebase uses
+TypeScript, and the attitude toward learning it (rather than the absence of experience) was a
+significant negative signal.
+
+Secondary Reason: Zero testing experience. At 1.5 years, some testing exposure is expected.
+No accessibility knowledge means the candidate has been building user-facing software without
+considering users with disabilities.
+
+Feedback Provided to Candidate: "Your CSS and design instincts are good. To be competitive for
+this role, you need to close these specific gaps: (1) Learn TypeScript — start with 'TypeScript
+Deep Dive' (free online). (2) Build a project with comprehensive testing using Jest and React
+Testing Library. (3) Take the free 'Web Accessibility' course on Udacity. (4) Learn Redux or
+Zustand for state management. At 1.5 years, these gaps are completely normal — with 6 months
+of focused effort, you can address all of them."
+
+---
+
+CASE RJ-004 | Role: AI/ML Engineer | Score: 71/100 | Quarter: Q4 2024
+----------------------------------------------------------------------
+Candidate Profile: MS AI, 2 years experience, strong academics
+Claimed Skills: Python, PyTorch, LLMs, RAG, Computer Vision
+Actual Assessment:
+- ML fundamentals excellent (Category 1: 23/25) — clear academic depth
+- PyTorch proficiency strong (Category 2: 22/25) — trained custom architectures
+- LLM experience: API calls and prompt engineering only; no fine-tuning (Category 3: 10/20)
+- MLOps: Development-only; no deployment experience (Category 4: 4/15)
+- Strong data engineering from research (Category 5: 12/15)
+
+Primary Rejection Reason: This was a close decision. The candidate scored 71/100, which is
+normally hireable. The specific reject was due to the role requirement for LLM fine-tuning
+experience that was listed as essential (not preferred). The team is building a fine-tuning
+pipeline for domain adaptation and needed someone who could contribute immediately. The gap
+between "API usage + prompt engineering" and "LoRA/QLoRA fine-tuning experience" was too
+significant for the team's current needs.
+
+Secondary Reason: No production deployment experience. The team needed someone who could
+ship models to production within the first month. Pairing a strong junior with an experienced
+MLOps engineer for onboarding would have been ideal but was not possible given headcount constraints.
+
+Feedback Provided to Candidate: "Your academic ML background is genuinely impressive. The specific
+gaps for this role were: (1) LLM fine-tuning experience — we needed hands-on LoRA/QLoRA experience.
+Recommendation: follow the Hugging Face PEFT documentation and fine-tune a Llama or Mistral model
+on a domain-specific dataset. (2) Production deployment — use FastAPI + Docker to deploy one of
+your models to a cloud provider. With 3–4 months building in these areas specifically, you would
+be an excellent candidate for re-application."
+
+---
+
+CASE RJ-005 | Role: Backend Engineer | Score: 49/100 | Quarter: Q3 2024
+------------------------------------------------------------------------
+Candidate Profile: Recent CS Graduate (BS), 6 months internship
+Claimed Skills: Python, REST APIs, SQL, AWS
+Actual Assessment:
+- Python acceptable for internship-level work; production patterns not present (Category 1: 12/25)
+- SQL: SELECT and JOIN queries; no understanding of indexing or transactions (Category 2: 9/25)
+- System design: No meaningful experience; designed a 3-table app as answer to distributed system question
+- AWS: Created an EC2 instance during an AWS free-tier project; one month ago (Category 4: 3/15)
+- Security: No awareness of basic security (stored passwords as plaintext in a project) (Category 5: 0/10)
+
+Primary Rejection Reason: Experience level did not match the role requirements. This is a mid-level
+backend role; the candidate is entry-level at best. The security gap (plaintext password storage)
+was a hard disqualifier — this indicates a lack of security awareness that could introduce serious
+vulnerabilities in a production system.
+
+Secondary Reason: The AWS experience described was a one-time free-tier exploration, not
+ongoing operational experience.
+
+Feedback Provided to Candidate: "You're in the early stages of your backend development journey,
+which is completely fine — the experience gap is the key factor. For this specific role, we need
+someone who has deployed and maintained production systems. Our recommendations: (1) Contribute to
+open-source projects to build real experience. (2) Build a personal project and deploy it to
+production — this is crucial. (3) Security fundamentals: take OWASP's free resources on web
+application security. (4) Study database fundamentals: indexing, ACID properties, transactions.
+In 1–2 years of focused growth, you would be a strong applicant for a junior backend role."
+
+---
+
+COMMON REJECTION PATTERNS:
+1. Skill misrepresentation: Listing a skill without proportional depth is the #1 mistake
+2. Critical role-specific gaps: Some skills are non-negotiable for the role's daily work
+3. Outdated patterns: Using patterns that reflect 2+ year old practices in a fast-moving field
+4. Security unawareness: Any indication of ignoring security is a significant negative
+5. Attitude toward learning: Explicit resistance to adopting team technologies is a red flag
+6. Experience level mismatch: Role requirements must align with actual experience, not claimed level

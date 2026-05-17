@@ -1,0 +1,167 @@
+ROLE-SPECIFIC SCORING RUBRICS
+==============================
+Version 3.1 | Maintained by: Talent Acquisition Team | Last Updated: Q1 2025
+
+PURPOSE: These rubrics ensure consistent, fair, and role-relevant evaluation. Reviewers must apply
+these criteria to every candidate. A candidate may be accepted with a score of 75+ if strengths
+in one area meaningfully compensate for gaps in another. Hard rejections occur below 60.
+
+---
+
+RUBRIC: AI/ML ENGINEER
+=======================
+
+CATEGORY 1: Core ML Fundamentals (25 points)
+- 25 pts: Demonstrates deep understanding of optimization (gradient descent variants, learning rate scheduling),
+          model evaluation (precision/recall/F1, confusion matrices, ROC-AUC), regularization techniques,
+          and statistical concepts (bias-variance tradeoff, hypothesis testing). Can explain WHY, not just HOW.
+- 20 pts: Solid understanding of most fundamentals with minor gaps in advanced topics.
+- 15 pts: Understands standard algorithms (linear regression, trees, SVMs) but limited depth in deep learning theory.
+- 10 pts: Basic ML knowledge; can implement tutorials but cannot reason about design choices.
+- 0–5 pts: Superficial familiarity; cannot explain concepts under probing.
+
+CATEGORY 2: Deep Learning & Framework Proficiency (25 points)
+- 25 pts: Proficient in PyTorch or TensorFlow; built and trained custom architectures (CNNs, RNNs, Transformers).
+          Experience with fine-tuning pre-trained models. Understands memory/compute trade-offs.
+- 20 pts: Strong framework skills; used pre-built architectures but limited custom model design.
+- 15 pts: Can train standard models; debugging skills developing. Limited fine-tuning experience.
+- 10 pts: Followed tutorials successfully; cannot troubleshoot independently.
+- 0–5 pts: Minimal hands-on experience.
+
+CATEGORY 3: LLM / GenAI Experience (20 points) [NEW — weight increased from v2.0]
+- 20 pts: Hands-on with LLM fine-tuning (LoRA/QLoRA), RAG pipelines, prompt engineering with systematic
+          evaluation, embedding models, and vector stores. Understanding of alignment and safety considerations.
+- 15 pts: Experience with LLM APIs and prompt engineering; may have built RAG demos. Limited fine-tuning.
+- 10 pts: Familiar with calling LLM APIs; has used ChatGPT or similar tools for projects.
+- 5 pts: Theoretical knowledge only; no hands-on LLM project.
+- 0 pts: No LLM experience.
+
+CATEGORY 4: MLOps & Production (15 points)
+- 15 pts: Experience with model serving (TorchServe, TensorFlow Serving, FastAPI), monitoring (data drift,
+          model degradation), experiment tracking (MLflow, W&B), and containerization. CI/CD for ML.
+- 10 pts: Model serving experience and basic experiment tracking. Limited production monitoring.
+- 5 pts: Can containerize a model; no real production deployment experience.
+- 0 pts: Development only; no deployment experience.
+
+CATEGORY 5: Data Engineering & Preprocessing (15 points)
+- 15 pts: Expert in data pipelines (Pandas, Spark, or SQL at scale), feature engineering, handling class
+          imbalance, data versioning, and dealing with real-world messy data. Caught leakage in a challenge.
+- 10 pts: Solid preprocessing skills; understands and applies standard techniques.
+- 5 pts: Can clean standard datasets; limited experience with real-world data messiness.
+- 0 pts: Relies on pre-cleaned tutorial data only.
+
+SCORING THRESHOLDS (AI/ML Engineer):
+- 90–100: Strong hire; senior-level consideration
+- 80–89: Confident hire; mid-level
+- 70–79: Hire with minor reservations; junior-mid level; clear growth areas identified
+- 60–69: Borderline; hire only with manager sign-off and strong cultural/growth signal
+- Below 60: Reject; fundamental gaps that cannot be addressed in onboarding
+
+---
+
+RUBRIC: BACKEND ENGINEER
+=========================
+
+CATEGORY 1: Server-Side Programming (25 points)
+- 25 pts: Expert in at least one backend language (Python/Java/Node.js/Go); has built production systems
+          at scale. Deep understanding of concurrency, async patterns, and memory management.
+- 20 pts: Strong proficiency; production experience with minor gaps in advanced concepts.
+- 15 pts: Mid-level; can build standard CRUD APIs but limited experience with complex business logic.
+- 10 pts: Beginner-intermediate; primarily tutorial-based projects.
+- 0–5 pts: Very limited coding ability; cannot implement beyond basic functions.
+
+CATEGORY 2: Databases & Data Management (25 points)
+- 25 pts: Expert SQL (complex joins, window functions, query optimization, indexing strategy); experience
+          with NoSQL (MongoDB, Redis, Elasticsearch); schema design for maintainability and performance.
+- 20 pts: Strong SQL; basic NoSQL; some query optimization experience.
+- 15 pts: Can write correct SQL; limited optimization or schema design experience.
+- 10 pts: Basic SQL (CRUD operations only); no NoSQL experience.
+- 0–5 pts: Minimal database experience.
+
+CATEGORY 3: System Design & Architecture (25 points)
+- 25 pts: Experience designing distributed systems; understands trade-offs (CAP theorem, eventual consistency);
+          microservices vs monolith; API design (REST, GraphQL); caching strategies.
+- 20 pts: Has designed moderately complex systems; understands microservices; limited distributed experience.
+- 15 pts: Monolithic application design; beginning to understand service decomposition.
+- 10 pts: Can build a simple REST API; limited architectural thinking.
+- 0–5 pts: No system design experience beyond tutorials.
+
+CATEGORY 4: Cloud & DevOps (15 points)
+- 15 pts: Hands-on AWS/GCP/Azure (compute, storage, databases, serverless); Docker + Kubernetes in production;
+          CI/CD pipelines; infrastructure as code.
+- 10 pts: Cloud experience (EC2, RDS, S3); Docker in production; CI/CD basics.
+- 5 pts: Has deployed to cloud but limited hands-on; Docker locally only.
+- 0 pts: No cloud experience.
+
+CATEGORY 5: Security & Reliability (10 points)
+- 10 pts: Understands authentication (JWT, OAuth), authorization patterns, SQL injection prevention,
+          rate limiting, circuit breakers, and observability (logging, metrics, tracing).
+- 7 pts: Implements auth correctly; limited distributed reliability patterns.
+- 3 pts: Basic security awareness; no reliability engineering experience.
+- 0 pts: No awareness of security or reliability considerations.
+
+SCORING THRESHOLDS (Backend Engineer):
+- 90–100: Strong hire; senior-level consideration
+- 80–89: Confident hire; mid-level
+- 70–79: Hire with minor reservations; junior-mid level
+- 60–69: Borderline; only with manager sign-off
+- Below 60: Reject
+
+---
+
+RUBRIC: FRONTEND ENGINEER
+==========================
+
+CATEGORY 1: Core Frontend Technologies (30 points)
+- 30 pts: Expert HTML5/CSS3; advanced JavaScript/TypeScript; deep React (hooks, state management, performance
+          optimization, reconciliation); responsive and accessible design (WCAG).
+- 25 pts: Strong React and TypeScript; solid CSS; some accessibility knowledge.
+- 20 pts: Proficient in React; JavaScript (may not use TypeScript); standard CSS.
+- 10 pts: Can build simple UI; limited component architecture thinking.
+- 0–5 pts: Beginner; tutorial-only projects.
+
+CATEGORY 2: State Management & Architecture (20 points)
+- 20 pts: Expert in state management (Redux, Zustand, Jotai, or React Query); understands component
+          architecture, code splitting, and performance profiling.
+- 15 pts: Redux or equivalent; understands lifting state and Context API; some performance work.
+- 10 pts: Context API; limited state management experience beyond useState.
+- 5 pts: Minimal state management; single-component apps.
+- 0 pts: No experience.
+
+CATEGORY 3: Testing & Quality (20 points)
+- 20 pts: Comprehensive testing strategy: unit (Jest), integration (Testing Library), E2E (Cypress/Playwright);
+          >80% coverage on recent projects; CI-integrated testing.
+- 15 pts: Unit and integration tests; limited E2E; good coverage on critical paths.
+- 10 pts: Some unit tests; testing added as afterthought.
+- 5 pts: Minimal testing; knows testing concepts but hasn't applied them.
+- 0 pts: No testing experience.
+
+CATEGORY 4: Build Tools & Performance (15 points)
+- 15 pts: Expert with Webpack/Vite; bundle optimization (code splitting, tree shaking, lazy loading);
+          Core Web Vitals; performance profiling tools.
+- 10 pts: Familiar with build tools; some bundle optimization.
+- 5 pts: Uses create-react-app or similar without custom configuration.
+- 0 pts: No build tool experience.
+
+CATEGORY 5: Design Collaboration & UX Sensibility (15 points)
+- 15 pts: Strong Figma skills; implements pixel-perfect designs; deep accessibility understanding; collaborates
+          effectively with designers; makes proactive UX improvement suggestions.
+- 10 pts: Can implement designs accurately; basic Figma; limited accessibility.
+- 5 pts: Implements designs with some gaps; limited designer collaboration.
+- 0 pts: No design collaboration experience.
+
+SCORING THRESHOLDS (Frontend Engineer):
+- 90–100: Strong hire; senior-level consideration
+- 80–89: Confident hire; mid-level
+- 70–79: Hire with minor reservations; junior-mid level
+- 60–69: Borderline; manager sign-off required
+- Below 60: Reject
+
+---
+
+GENERAL EVALUATION NOTES (ALL ROLES):
+- Transferable skills should be credited (e.g., R → Python, Angular → React) with a small discount
+- Side projects count as valid experience if they demonstrate real problem-solving
+- Research experience counts, especially if it shows depth and rigorous thinking
+- Communication quality during the interview adds up to ±5 points (soft-skill bonus)
+- Strong cultural alignment and growth mindset can move a borderline candidate (65–69) to hire

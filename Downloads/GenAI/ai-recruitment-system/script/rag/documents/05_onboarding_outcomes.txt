@@ -1,0 +1,171 @@
+ONBOARDING OUTCOMES & 90-DAY PERFORMANCE NOTES
+===============================================
+Source: Engineering Manager Reviews | Period: 2022–2025 | Anonymized
+
+PURPOSE: These notes capture how successfully hired candidates performed in their first 90 days.
+They help the AI Review Agent understand which candidate characteristics correlated with strong
+performance versus those who struggled, enabling more predictive screening.
+
+---
+
+OUTCOME ON-001 | Role: AI/ML Engineer | Hire Ref: SH-001
+---------------------------------------------------------
+90-Day Rating: Exceeds Expectations
+
+Performance Summary:
+- Shipped first production feature (model serving endpoint) in week 3; ahead of the typical 6-week timeline
+- Required minimal hand-holding for code review process and Git workflows
+- Proactively identified a data leakage issue in the existing training pipeline that had been causing
+  inflated offline metrics — a significant contribution in the first month
+- Strong communicator; weekly updates were clear, concise, and technically precise
+
+Skills That Transferred Directly from Hiring Assessment:
+- Data intuition (caught leakage in hiring challenge) → caught it in production too
+- LangChain/RAG background → immediately contributed to the team's RAG product work
+- Comfort with model evaluation → drove improvements to the evaluation harness
+
+Onboarding Challenges:
+- Took longer to learn Docker for production use (had only used it locally before); required 2 weeks
+  of pairing with the MLOps engineer — this was anticipated and planned for
+
+Key Learning: Candidates who demonstrate strong debugging and data intuition in the interview
+(especially in coding challenges with intentional errors or imbalanced data) tend to catch
+production issues faster. This is a leading indicator worth weighting heavily.
+
+---
+
+OUTCOME ON-002 | Role: Backend Engineer | Hire Ref: SH-002
+-----------------------------------------------------------
+90-Day Rating: Meets Expectations (with strong upward trajectory)
+
+Performance Summary:
+- Onboarded to the codebase more slowly than expected; took 5 weeks to make first meaningful commit
+- Strong on reliability patterns (circuit breakers, retries) — immediately applied to an existing
+  fragile service integration
+- GraphQL learning curve was slower than anticipated (had mentioned this as a gap)
+- By day 75, was contributing independently and had designed a new service from scratch
+
+Skills That Transferred Directly:
+- Kubernetes knowledge was immediately useful — took ownership of a deployment issue in week 2
+- Database performance instincts: wrote a complex optimized query that replaced a slow N+1 pattern
+
+Onboarding Challenges:
+- GraphQL adoption took ~6 weeks of deliberate study; the gap noted in the interview was real
+- Communication style was strong verbally but written documentation was initially sparse;
+  addressed through team feedback in week 4
+
+Key Learning: Candidates with Kubernetes experience at the interview level (not just tutorial-level)
+contribute on infrastructure issues within weeks. "Tutorial experience" vs "production experience"
+distinction is important to probe during interviews. Gaps explicitly acknowledged by candidates
+(vs. undisclosed gaps) tend to be addressed more proactively during onboarding.
+
+---
+
+OUTCOME ON-003 | Role: Frontend Engineer | Hire Ref: SH-003
+------------------------------------------------------------
+90-Day Rating: Exceeds Expectations
+
+Performance Summary:
+- Component library contributions started in week 2 — clear architectural thinking from day one
+- Pushed the team to improve accessibility standards; filed 12 accessibility bugs in existing
+  components and fixed 8 of them within 90 days
+- Next.js was new; learned it in parallel with onboarding and shipped an SSR feature by day 60
+- Most impactful early hire in the past 2 years according to engineering manager
+
+Skills That Transferred Directly:
+- Component library background → owned library expansion immediately
+- Accessibility depth → became the team's de facto accessibility reviewer
+- Testing culture → raised team test coverage from 60% to 73% in 90 days
+
+Onboarding Challenges:
+- Next.js learning was harder than expected (SSR concepts were new); required structured learning time
+- Design system opinions occasionally conflicted with existing patterns; required alignment conversations
+
+Key Learning: Candidates with self-built design systems or component libraries indicate architectural
+maturity far above their years of experience. Accessibility knowledge is a strong signal — candidates
+who deeply understand accessibility understand their users. Willingness to learn SSR frameworks despite
+no experience was accurately predicted by the candidate's rapid adoption of Vite in the interview challenge.
+
+---
+
+OUTCOME ON-004 | Role: AI/ML Engineer | Hire Ref: SH-004
+---------------------------------------------------------
+90-Day Rating: Meets Expectations (Below Expectations in weeks 1–4, recovered strongly)
+
+Performance Summary:
+- First 30 days were rough — Docker, code review, and collaborative Git workflows (feature branches,
+  PRs, CI checks) were all new. The anticipated SWE practices gap was real.
+- The mentorship plan was essential; without it, performance would have been below expectations
+  through the full 90 days
+- By day 45, the SWE practices caught up significantly
+- LLM fine-tuning work (the core role requirement) was excellent from day one — immediately
+  contributed to the LoRA fine-tuning pipeline
+- Research background contributed depth: proposed a better evaluation methodology for fine-tuned models
+  that the team adopted company-wide
+
+Skills That Transferred Directly:
+- LLM fine-tuning → exactly what was needed; significant immediate impact
+- ML fundamentals depth → improved evaluation methodology
+- Research rigor → better experimental design
+
+Onboarding Challenges:
+- SWE practices gap was significant (as predicted); mentorship was necessary, not optional
+- Needed structured time to learn Git branching strategy, code review, and CI/CD
+
+Key Learning: Research-to-industry transitions require explicit mentorship on SWE practices.
+When the hiring panel notes "SWE practices gap," a mentorship plan must be created before day one —
+not after problems emerge. The core technical depth (in this case, fine-tuning) transfers reliably;
+the peripheral SWE practices can be taught with the right support.
+
+---
+
+OUTCOME ON-005 | Role: Backend Engineer | Hire Ref: SH-005
+-----------------------------------------------------------
+90-Day Rating: Exceeds Expectations
+
+Performance Summary:
+- Self-taught background created no observable gaps in first 90 days
+- Open-source experience meant strong code quality and PR etiquette from day one
+- Kubernetes was new; learned it in weeks 1–3 through documentation and team pairing; contributing
+  by week 4 — faster than most candidates with claimed Kubernetes experience
+- Multi-tenant SaaS architecture contributions started in week 6; designed a tenant isolation pattern
+  improvement that is now the team standard
+
+Skills That Transferred Directly:
+- Open-source code quality standards → immediately production-ready code
+- Multi-tenant thinking → direct architectural contributions
+- Billing/payments background → surprised the team with domain knowledge relevant to a new feature
+
+Onboarding Challenges:
+- CS fundamentals gaps (algorithms, formal data structures) surfaced in one whiteboard session;
+  did not affect practical work but required some conceptual grounding
+- Kubernetes onboarding took focused effort (as anticipated)
+
+Key Learning: Open-source maintainers tend to have strong code quality, PR etiquette, and documentation
+habits that are harder to teach than technical skills. Self-taught candidates with production deployments
+and real users often have stronger practical instincts than academically credentialed candidates
+without production experience. The gap should be verified — not assumed.
+
+---
+
+PREDICTIVE SIGNALS SUMMARY (Based on 90-Day Outcomes):
+=======================================================
+
+STRONG POSITIVE PREDICTORS:
+1. Caught/identified bugs or data issues in the interview challenge → predicts production bug-finding
+2. Open-source projects with real users → predicts code quality and documentation habits
+3. Self-built tools or libraries → predicts architectural thinking and initiative
+4. Explicitly acknowledged gaps (rather than hiding them) → predicts self-aware, coachable behavior
+5. Rapid technology adoption demonstrated during interview (e.g., picked up new tool mid-challenge) → predicts onboarding speed
+6. Research publications → predicts rigor and depth in ML roles specifically
+
+MODERATE POSITIVE PREDICTORS:
+7. Side projects with real deployments (not just local/demo) → predicts deployment readiness
+8. Strong testing culture → predicts production code quality
+9. Accessibility knowledge in frontend candidates → predicts user empathy and holistic thinking
+
+RISK FACTORS TO WATCH:
+10. Gaps between claimed skill level and demonstrated level → requires specific probing question
+11. SWE practices gap in research candidates → plan mentorship before day one
+12. New technology adoption required for role + no evidence of rapid learning → high onboarding risk
+13. Limited production deployment experience → pair with experienced engineer immediately on day one
