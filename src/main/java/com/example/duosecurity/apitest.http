@@ -1,0 +1,17 @@
+
+
+
+GET http://localhost:8080/api/profile
+
+GET http://localhost:8080/api/hello
+
+
+POST http://localhost:8080/mfa/verify
+Content-Type: application/json
+
+{
+  "username": "alice",
+  "password": "password123"
+}
+
+
